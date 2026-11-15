@@ -1,0 +1,5 @@
+{
+  "name": "ricejy-rice-wine",
+  "owner": { "name": "ricejy" },
+  "plugins": [{ "name": "rice-wine", "source": "./" }]
+}

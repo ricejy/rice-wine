@@ -1,0 +1,11 @@
+.env
+.env.*
+*.pem
+*.key
+credentials*
+node_modules/
+__pycache__/
+.DS_Store
+.vscode/
+.obsidian/
+*.log

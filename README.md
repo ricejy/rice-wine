@@ -1,0 +1,41 @@
+# rice-wine
+
+A mod for Claude Code: a rice-wine look with rice grains drifting up the
+background, and a bowl-of-rice mascot in the bottom-right corner that shows
+what Claude is doing.
+
+- **While Claude works** the mascot types at a laptop, lifts weights or runs on
+  the spot, changing every 12 seconds.
+- **While Claude rests** it eats for 25 seconds, then falls asleep.
+- **When the context window is 80% full** it frets while resting, and sweats
+  while working.
+- A small bar under the mascot shows how full the context window is: green,
+  amber from 60%, red from 80%.
+
+## Good to know
+
+- The mod is made for the Claude desktop app, which draws the backdrop. It has
+  not been tried in a terminal, where the backdrop is not drawn.
+- The mascot is placed for a wide window. In a narrow or portrait window the
+  backdrop is cropped at the sides and the mascot can be cut off or hidden.
+- The mod sets its look again at the start of every turn, so it overrides any
+  other theme mod running in the same session.
+
+## Install
+
+At the prompt of a terminal session:
+
+```
+/plugin install rice-wine --marketplace ricejy/rice-wine
+```
+
+Answer `y` to add the marketplace, then pick a scope (user, for every session).
+
+From a shell:
+
+```
+claude plugin install rice-wine --marketplace ricejy/rice-wine
+```
+
+In the desktop app, where `/plugin` does not run: click + next to the prompt
+box, then Plugins, Add marketplace with `ricejy/rice-wine`, then Add plugin.
