@@ -1,1 +1,31 @@
-{ "modules": ["./register.tsx"] }
+{
+  "modules": [
+    "./register.tsx"
+  ],
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -Command \"(New-Object Media.SoundPlayer '${CLAUDE_PLUGIN_ROOT}/sounds/pickup.wav').PlaySync()\" 2>/dev/null || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/pickup.wav\" 2>/dev/null || paplay \"${CLAUDE_PLUGIN_ROOT}/sounds/pickup.wav\" 2>/dev/null || aplay -q \"${CLAUDE_PLUGIN_ROOT}/sounds/pickup.wav\" 2>/dev/null || true",
+            "async": true,
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -Command \"(New-Object Media.SoundPlayer '${CLAUDE_PLUGIN_ROOT}/sounds/pickup.wav').PlaySync()\" 2>/dev/null || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/pickup.wav\" 2>/dev/null || paplay \"${CLAUDE_PLUGIN_ROOT}/sounds/pickup.wav\" 2>/dev/null || aplay -q \"${CLAUDE_PLUGIN_ROOT}/sounds/pickup.wav\" 2>/dev/null || true",
+            "async": true,
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -11,6 +11,9 @@ what Claude is doing.
   while working.
 - A small bar under the mascot shows how full the context window is: green,
   amber from 60%, red from 80%.
+- A soft item-pickup chime plays when Claude finishes a turn or needs your
+  attention. It uses PowerShell on Windows, `afplay` on macOS, and `paplay` or
+  `aplay` on Linux. On Windows it needs Git Bash, which Claude Code's hooks use.
 
 ## Good to know
 

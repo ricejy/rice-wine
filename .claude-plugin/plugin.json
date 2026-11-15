@@ -1,6 +1,6 @@
 {
   "name": "rice-wine",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A rice-wine look: milky rice paper by day, earthenware by night, celadon accents, drifting rice grains, and a bowl-of-rice mascot that reacts to the session.",
   "author": { "name": "ricejy" },
   "types": "./types/index.d.ts"
